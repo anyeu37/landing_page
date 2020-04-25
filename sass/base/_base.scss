@@ -1,0 +1,26 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: $default-font-size;
+  color: $color-gray;
+  line-height: 1.7;
+  background-color: $color-white;
+}
+html {
+  font-size: 62.5%;
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+  @include responsive(tab-port) {
+    font-size: 50%;
+  }
+  @include responsive(desktop) {
+    font-size: 75%;
+  }
+}

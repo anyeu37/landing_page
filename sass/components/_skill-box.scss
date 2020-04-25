@@ -1,0 +1,49 @@
+.skill-box {
+  background-color: rgba($color: $color-white, $alpha: 0.8);
+  border-radius: 5rem;
+  padding: 3rem;
+  box-shadow: 0 3px 8px rgba($color: $color-black, $alpha: 0.7);
+  text-align: center;
+  transition: all 0.5s;
+  &:hover {
+    transform: translateY(-2rem) scale(1.1);
+  }
+  &__icon {
+    font-size: 6rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 1.5rem;
+    &--1 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary, 0.7)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-secondary-light, 0.7),
+        rgba($color-secondary-dark, 0.7)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-tertiary-light, 0.7),
+        rgba($color-tertiary-dark, 0.7)
+      );
+    }
+    &--4 {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-gray, 0.7),
+        rgba($color-gray-dark-1, 0.7)
+      );
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}

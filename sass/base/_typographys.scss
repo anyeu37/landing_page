@@ -1,0 +1,67 @@
+.heading-primary {
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 5rem;
+  &--main {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3rem;
+    display: block;
+    text-shadow: 0 3px 5px rgba($color: $color-black, $alpha: 0.7);
+    animation: moveInLeft 3s ease;
+    @include responsive(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
+  }
+  &--sub {
+    font-weight: 1.5rem;
+    letter-spacing: 1.4rem;
+    font-weight: 400;
+    display: block;
+    text-shadow: 0 2px 5px rgba($color: $color-black, $alpha: 0.7);
+    animation: moveInRight 3s ease;
+    @include responsive(phone) {
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+.heading-secondary {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary-light, 0.7),
+    rgba($color-primary-dark, 0.7)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  display: inline-block;
+  text-shadow: 0 1px 1px rgba($color: $color-black, $alpha: 0.2);
+  transition: all 0.5s;
+  @include responsive(tab-port) {
+    font-size: 3rem;
+  }
+  @include responsive(phone) {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+  &:hover {
+    transform: skewY(5deg) scale(1.05);
+    text-shadow: 0 1px 2px rgba($color: $color-black, $alpha: 0.2);
+  }
+}
+.heading-tertiary {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  color: $color-gray;
+}
+.paragraph {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

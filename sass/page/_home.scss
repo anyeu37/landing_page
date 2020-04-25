@@ -1,0 +1,37 @@
+.section-about {
+  background-color: $color-gray-light-1;
+  padding: 15rem 0;
+  margin-top: -10rem;
+}
+.section-skills {
+  background-image: linear-gradient(
+    to top right,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  padding: 15rem 0;
+  clip-path: ellipse(72% 50% at 51% 50%);
+  margin-top: -10rem;
+  @include responsive(tab-port) {
+    margin-top: 30rem;
+    clip-path: ellipse(90% 50% at 51% 50%);
+  }
+}
+
+.section-courses {
+  background-color: $color-gray-light-1;
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+}
+.section-testimonial {
+  padding: 6rem 0;
+  position: relative;
+}
+.section-contact {
+  padding: 6rem 0;
+  background-image: linear-gradient(
+    to top,
+    rgba($color-primary-light, 0.7),
+    rgba($color-primary-dark, 0.7)
+  );
+}

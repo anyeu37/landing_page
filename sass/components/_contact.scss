@@ -1,0 +1,17 @@
+.contact {
+  height: 50rem;
+  border-radius: 5rem;
+  background-image: radial-gradient(
+      150% 200% ellipse at -10% 50%,
+      rgba($color-white, 0.7) 50%,
+      transparent 50%
+    ),
+    url("../../img/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 5px rgba($color-black, 0.7);
+  &__form {
+    padding: 6rem;
+    width: 60%;
+  }
+}
